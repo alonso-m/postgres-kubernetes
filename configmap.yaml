@@ -5,4 +5,4 @@ metadata:
   labels:
     app: postgres
 data:
-  POSTGRES_MULTIPLE_DATABASES: bitbucket,bamboo
+  POSTGRES_MULTIPLE_DATABASES: bitbucket,bamboo,nextcloud
