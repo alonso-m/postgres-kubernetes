@@ -15,6 +15,18 @@ spec:
         app: postgres
     spec:
       hostname: postgres
+      affinity:                                            
+        podAffinity:                                       
+          preferredDuringSchedulingIgnoredDuringExecution: 
+          - weight: 100                                    
+            podAffinityTerm:                               
+              labelSelector:                               
+                matchExpressions:                          
+                - key: app                                 
+                  operator: In                             
+                  values:                                  
+                  - bitbucket                                  
+              topologyKey: "kubernetes.io/hostname"        
       containers:
       - name: postgres
         image: maikimaiko/postgres-multi-db:10
