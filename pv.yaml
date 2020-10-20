@@ -14,5 +14,5 @@ spec:
     - lookupcache=pos
     - noatime
   nfs:
-    path: /zfs/application-data/postgres
+    path: /zfs/encrypted/application-data/postgres
     server: node06
