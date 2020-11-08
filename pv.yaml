@@ -15,4 +15,4 @@ spec:
     - noatime
   nfs:
     path: /zfs/encrypted/application-data/postgres
-    server: node06
+    server: node00
