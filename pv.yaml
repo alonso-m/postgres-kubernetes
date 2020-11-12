@@ -14,5 +14,5 @@ spec:
     - lookupcache=pos
     - noatime
   nfs:
-    path: /zfs/encrypted/application-data/postgres
+    path: /mnt/kingston/application-data/postgres
     server: node00
